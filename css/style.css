@@ -1,0 +1,624 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+html {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-size: 16px;
+}
+/* ---------- Section 1 Navigation Bar & Banner ---------- */
+#sec1 {
+    background: url("../images/banner.jpg") no-repeat center 65%;
+    background-size: cover;
+    height: 710px;
+}
+nav {
+    background-color: black;
+}
+nav a {
+    display: block;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+nav a i {
+    border: solid 1px white;
+    border-radius: 50%;
+    padding: 5px
+}
+#sec1 article {
+    margin-top: 180px;
+    text-align: center;
+    padding: 10px;
+    background-color: #F9BE00;
+}
+#sec1 article h3 {
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+#sec1 article h2 {
+    font-size: 2rem;
+}
+#sec1 article h1 {
+    font-size: 2.5rem;
+    color: #CD8383;
+}
+#sec1 article button {
+    margin-top: 10px;
+    padding: 5px 20px;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+}
+#sec1 article button a {
+    color: black;
+}
+/* Extra small devices (portrait phones, less than 576px)
+No media query since this is the default if you use "mobile first" */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .wrapper {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #sec1 {
+        height: 780px;
+        background: url("../images/banner.jpg") no-repeat center 100%;
+        background-size: 100%
+    }
+    #sec1 article {
+        margin-top: 100px;
+        text-align: left;
+        padding: 10px;
+        background: none;
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        border-top: solid 20px #FFC700;
+    }
+    .wrapper {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #sec1 {
+        height: 750px;
+    }
+    #sec1 article {
+        margin-top: 250px;
+    }
+    #sec1 article h3 {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+    }
+    #sec1 article h2 {
+        font-size: 2.5rem;
+    }
+    #sec1 article h1 {
+        font-size: 3rem;
+        color: #CD8383;
+    }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #sec1 {
+        background: url("../images/banner.jpg") no-repeat center center;
+        background-size: 100%;
+        height: 950px;
+    }
+    #sec1 article {
+        margin-top: 250px;
+    }
+    #sec1 article h3 {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+    #sec1 article h2 {
+        font-size: 3rem;
+    }
+    #sec1 article h1 {
+        font-size: 3.5rem;
+        color: #CD8383;
+    }
+}
+/* ---------- Section 2 Title ---------- */
+#sec2 {
+    background-color: black;
+    padding-top: 10px
+}
+#sec2 h1 {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #FAC769;
+    margin-top: 5px;
+}
+#sec2 p {
+    text-align: justify;
+    color: white;
+    margin-top: 10px;
+    font-size: .9rem;
+    padding-bottom: 50px;
+}
+/* Extra small devices (portrait phones, less than 576px)
+No media query since this is the default if you use "mobile first" */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #sec2 h1 {
+        text-align: left;
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #sec2 h1 {
+        font-size: 1.9rem;
+        text-align: left;
+    }
+    #sec2 p {
+        font-size: 1.3rem
+    }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+/* ----------  Main Title ---------- */
+main {
+    background-color: #FCC820;
+    padding: 10px;
+    margin-bottom: 10px
+}
+main h1 {
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+}
+/* Extra small devices (portrait phones, less than 576px)
+No media query since this is the default if you use "mobile first" */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    main {
+        background-color: #FCC820;
+        padding: 25px;
+        margin-bottom: 20px
+    }
+    main h1 {
+        text-align: center;
+        font-size: 2rem;
+        color: white;
+    }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+/* ----------  Section 3 Deals ---------- */
+#sec3 {
+    color: #fff;
+    padding-top: 25px;
+}
+#sec3 .wrapper {
+    margin-left: auto;
+    margin-right: auto;
+}
+#sec3 > h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #000;
+}
+#sec3 article {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+#sec3 article img {
+    max-width: 100%;
+    height: auto;
+}
+#sec3 footer {
+    position: relative;
+    top: -30px;
+}
+#sec3 footer .yellowSkew, #sec3 footer .blackSkew {
+    height: 40px;
+    position: absolute;
+    width: 100%;
+}
+#sec3 footer .yellowSkew {
+    background-color: #fec40180;
+    transform: skewY(-2deg);
+}
+#sec3 footer .blackSkew {
+    background-color: #000;
+    transform: skewY(3deg);
+    height: 300px;
+}
+#sec3 footer .cont {
+    position: relative;
+    padding: 25px 15px 15px 15px;
+}
+#sec3 footer .cont h2 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #E2B000
+}
+#sec3 footer .cont p {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    text-align: justify;
+}
+@media (min-width: 576px) {}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #sec3 .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    #sec3 article {
+        flex-basis: 31%;
+    }
+}
+/* ----------  Section 4 New Arrivals ---------- */
+#sec4 {
+    background-color: black;
+    padding: 50px;
+}
+#sec4 h1 {
+    color: #E2B000;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+#sec4 .wrapper img {
+    max-width: 100%;
+    height: auto;
+}
+/* Extra small devices (portrait phones, less than 576px)
+No media query since this is the default if you use "mobile first" */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #sec4 .wrapper {
+        max-width: 84%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #sec4 .wrapper img {
+        max-width: 25%;
+        height: auto;
+        padding: 10px;
+    }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+/* ----------  Section 5 Order now ---------- */
+#sec5 {
+    background-color: #E2B000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+#sec5 h4 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+#sec5 h2 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+#sec5 aside button {
+    margin-top: 10px;
+    padding: 2.5px 10px;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+}
+#sec5 aside button a {
+    color: black;
+}
+/* Extra small devices (portrait phones, less than 576px)
+No media query since this is the default if you use "mobile first" */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #sec5 article {
+        height: 100px;
+        display: inline-flex;
+        flex-basis: 50%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    #sec5 article h4 {
+        width: 100%;
+        align-self: flex-start
+    }
+    #sec5 article h2 {
+        width: 100%;
+        align-self: flex-end
+    }
+    #sec5 aside {
+        height: 100px;
+        display: inline-flex;
+        flex-basis: 40%;
+        margin-left: 400px;
+    }
+    #sec5 aside button {
+        align-self: flex-end;
+    }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+/* ----------  Section 6 Achievments ---------- */
+#sec6 {
+    background-color: #000;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#sec6 h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#sec6 p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+#sec6 img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+#sec6 aside {
+    margin-bottom: 30px;
+}
+#sec6 aside h1 {
+    margin-bottom: 5px;
+}
+#sec6 aside p {
+    margin-bottom: 2px;
+    text-align: center;
+}
+/* Extra small devices (portrait phones, less than 576px)
+No media query since this is the default if you use "mobile first" */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #sec6 section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #sec6 aside {
+        width: 49%;
+    }
+    #sec6 aside section {
+        display: none;
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #sec6 h1 {
+        font-size: 3rem;
+    }
+    #sec6 p {
+        font-size: 1.4rem;
+    }
+    #sec6 aside h1 {
+        margin-bottom: 5px;
+        font-size: 3.5rem;
+    }
+    #sec6 aside p {
+        margin-bottom: 2px;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #sec6 h1 {
+        text-align: left;
+    }
+    #sec6 article {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    #sec6 img {
+        width: 49%;
+    }
+    #sec6 section {
+        width: 46%;
+    }
+    #sec6 aside h1, #sec6 aside p {
+        text-align: left;
+    }
+}
+/* ----------  Section 7 Contact Us ---------- */
+#sec7 {
+    background: url("../images/contactus.jpg") no-repeat center center;
+    background-size: cover;
+}
+#sec7 article h1 {
+    text-align: center;
+    color: #E2B000;
+    font-size: 1.5rem;
+    padding: 10px 0;
+}
+#sec7 article p {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 0;
+}
+#sec7 form {
+    border: 1px solid #E2B000;
+    text-align: center;
+}
+#sec7 form input {
+    display: block;
+    width: 210px;
+    padding: 10px 30px 10px 10px;
+    margin: 10px auto;
+}
+#sec7 form button {
+    display: block;
+    margin: 10px auto;
+    width: 210px;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #E2B000;
+    text-transform: uppercase;
+	cursor: pointer;
+}
+/* Extra small devices (portrait phones, less than 576px)
+No media query since this is the default if you use "mobile first" */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #sec7 form input {
+        width: 300px;
+        padding: 10px 30px 10px 10px;
+    }
+    #sec7 form button {
+        width: 300px;
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #sec7 .wrapper {
+        height: 450px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #sec7 .wrapper article {
+        width: 60%;
+    }
+    #sec7 .wrapper article h1 {
+        text-align: left;
+        font-size: 3rem;
+    }
+    #sec7 article p {
+        font-size: 1.4rem;
+        text-align: left
+    }
+    #sec7 form {
+        padding: 50px;
+    }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+/* ----------  Section 8 Footer ---------- */
+#sec8 {
+    background-color: black;
+}
+#sec8 footer article p {
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+#sec8 footer article {
+    text-align: center;
+}
+#sec8 footer article a {
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+#sec8 footer article span {
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+#sec8 footer article input {
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+#sec8 footer article button {
+    padding: 5px 10px;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+	cursor: pointer;
+}
+/* Extra small devices (portrait phones, less than 576px)
+No media query since this is the default if you use "mobile first" */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #sec8 footer {
+        height: 350px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center
+    }
+    #sec8 footer article p {
+        font-size: 1.5rem
+    }
+    #sec8 footer article a {
+        font-size: 2rem;
+        padding: 10px;
+    }
+    #sec8 footer .social {
+        display: block;
+    }
+    #sec8 footer article span {
+        font-size: 1.5rem;
+    }
+    #sec8 footer article input {
+        width: 300px;
+        margin-top: 10px;
+    }
+    #sec8 footer article button {
+        padding: 15px 30px;
+        margin-top: 20px;
+    }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
